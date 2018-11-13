@@ -1,0 +1,48 @@
+{
+  "_from": "git+https://github.com/nakarin0913/libhtml2imagezk.git",
+  "_id": "html2png@1.0.0",
+  "_inBundle": false,
+  "_location": "/html2png",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "libhtml2imagezk@git+https://github.com/nakarin0913/libhtml2imagezk.git",
+    "name": "html2png",
+    "escapedName": "html2png",
+    "rawSpec": "git+https://github.com/nakarin0913/libhtml2imagezk.git",
+    "saveSpec": "git+https://github.com/nakarin0913/libhtml2imagezk.git",
+    "fetchSpec": "https://github.com/nakarin0913/libhtml2imagezk.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "git+https://github.com/nakarin0913/libhtml2imagezk.git#ec0bef27028e9433e05e0fcac89b4a569e2a8926",
+  "_spec": "libhtml2imagezk@git+https://github.com/nakarin0913/libhtml2imagezk.git",
+  "_where": "C:\\Users\\CTZCZ\\Desktop\\Hapi_portforio",
+  "author": {
+    "name": "Nakarin Weerasak"
+  },
+  "bugs": {
+    "url": "https://github.com/nakarin0913/libhtml2imagezk/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "html-pdf": "^2.1.0"
+  },
+  "deprecated": false,
+  "description": "",
+  "homepage": "https://github.com/nakarin0913/libhtml2imagezk#readme",
+  "license": "ISC",
+  "main": "./src/index.js",
+  "name": "html2png",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nakarin0913/libhtml2imagezk.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}

@@ -1,0 +1,109 @@
+<html>
+<meta charset="utf-8"/>
+<link href="https://fonts.googleapis.com/css?family=K2D|Pattaya" rel="stylesheet"> 
+<style>
+    html,
+    body {
+        font-family: "K2D";
+        height: 100%;
+        width: 100%;
+        position:absolute;
+    }
+
+    html{
+        background-size: cover;
+        background-color: orange;
+    }
+
+    div{
+        margin-right: 50px;
+    }
+
+    label{
+        font-size: 60px;
+    }
+
+    .title-txt{
+        text-align: right;
+        margin-top: 620px;
+        margin-right: 80px;
+        font-size: 120px;
+        color: rgb(255, 187, 0);
+        -webkit-text-stroke: 3px white;
+        /* -webkit-text-fill-color: white; */
+    }
+
+    .text-align-right{
+        text-align: right;
+    }
+
+    .text-align-left{
+        text-align: left;
+    }
+
+    .text-white{
+        color: white;
+    }
+
+    .text-black{
+        color: black;
+    }
+
+    .school-name{
+        margin-top: 620px;
+        margin-right: 90px;
+        color: black;
+    }
+
+    .nick-name{
+        position: fixed;
+        margin-bottom: 700px;
+        margin-left: 560px;
+        bottom: 0;
+        font-size: 250px;
+        color: white;
+    }
+    
+    .full-name{
+        position: fixed;
+        margin-bottom: 670;
+        margin-left: 480;
+        bottom: 0;
+        font-size: 70;
+        color: white;
+    }
+
+    .img-bk{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        padding: 0;
+        z-index: -5;
+    }
+
+    .img-photo{
+        position: absolute;
+        width: 1680px;
+        margin-top: 6%;
+        margin-left: 30%;
+        z-index: -10;
+    }
+</style>
+
+<body>
+    <div class="school-name text-align-right text-white ">
+        <label><%= schoolName %></label>
+    </div>
+
+    <div class="nick-name text-align-left text-black ">
+        <%= nickName %>
+    </div>
+    <div class="full-name text-align-left text-black ">
+        <%= fullName %>
+    </div>
+    <img class="img-bk" src="data:image/png;base64,<%=backgroundImage%>">
+    <img class="img-photo" src="<%=imagePhoto%>">
+</body>
+
+</html>
