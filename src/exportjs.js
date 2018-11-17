@@ -24,6 +24,26 @@ function create(html, htmlOptions, filePath) {
     });
 }
 
+function createBase64Fn(html, htmlOptions) {
+    return new Promise((resovle, reject) => {
+        try {
+            html2pdf
+                .create(html, htmlOptions)
+                .toBuffer(function (err, res) {
+                    if (err) {
+                        reject(err);
+                    } else {
+                        var base64 = new Buffer(res).toString('base64');
+                        resovle(base64);
+                    }
+                });
+        } catch (err) {
+            reject(err);
+        }
+    });
+}
+
+
 function render(templatePath, entity) {
     
     var html = ejs.render(
@@ -55,6 +75,13 @@ module.exports = function (eAppOptions) {
                 html,
                 htmlOptions, 
                 'out/outs.'+htmlOptions.type
+            );
+        },
+        createBase64: function (entity) {
+            let html = render(eAppOptions.templatePath,entity);
+            return createBase64Fn(
+                html,
+                htmlOptions
             );
         }
     };

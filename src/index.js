@@ -14,5 +14,9 @@ const eAppOptions = {
 module.exports = {
   createFileImage: function (entity) {
     return Exportjs(eAppOptions).create(entity);
+  },
+
+  createFileBase64: function (entity) {
+    return Exportjs(eAppOptions).createBase64(entity);
   }
 };
